@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="x-icon" href="logov2.svg">
+    <script src="https://kit.fontawesome.com/265eaba4ad.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -21,26 +22,26 @@
                 </a>
 
                 <div class="flex items-center lg:order-2">
-                    <button data-collapse-toggle="mobile-menu-2" type="button" onclick="navigation()" class="hamburgermenu inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-yellow-600 dark:focus:ring-yellow-500" aria-controls="mobile-menu-2" aria-expanded="false">
+                    <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-yellow-600 dark:focus:ring-yellow-500" aria-controls="mobile-menu-2" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                         <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     </button>
                 </div>
 
-                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-2"  id="mobile-menu-2">
-                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0" id="mobile-menu">
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-2" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li>
                             <a href="index.html" class="block py-2 pr-4 pl-3 text-black rounded bg-primary-700 lg:bg-transparent lg:text-black lg:p-0 dark:text-black lg:dark:hover:text-yellow-500 focus:underline" aria-current="page">Hem</a>
                         </li>
                         <li>
-                            <a href="meny.html" class="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-black lg:p-0 dark:text-black lg:dark:hover:text-yellow-500 focus:underline activelink">Vår meny</a>
+                            <a href="meny.html" class="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-black lg:p-0 dark:text-black lg:dark:hover:text-yellow-500 focus:underline active:underline">Vår meny</a>
                         </li>
                         <li>
                             <a href="news.html" class="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-black lg:p-0 dark:text-black lg:dark:hover:text-yellow-500 focus:underline active:underline">Nyhetsbrev</a>
                         </li> 
                         <li>
-                            <a href="restaurang.html" class="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-black lg:p-0 dark:text-black lg:dark:hover:text-yellow-500 focus:underline active:underline">Hitta restaurang</a>
+                            <a href="restaurang.html" class="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-black lg:p-0 dark:text-black lg:dark:hover:text-yellow-500 focus:underline active:underline activelink">Hitta restaurang</a>
                         </li>                    
                     </ul>
                 </div>
@@ -49,132 +50,54 @@
         </nav>
     </header>
 
-<!------------ Seperator Top ------------>
+<!------------ Separator Top ------------>
     
-   <hr>
+  <hr>
 
-<!------------ Hamburger Text ------------>
+<!------------ Content ------------>
+<div class="mapgeneral">
+    <div class="mapcontainer">
+        <div class="content">
+            <h1>Malmö Triangeln</h1>
+            <p class="street"><strong>Friisgatan 2B</strong></p>
+            <div class="info-row">
+                <p>Malmö, 211 46</p>
+                <a class="mapredirect" href="https://www.google.com/maps/dir//55.59473,13.00309/@55.5945757,12.9209159,12z?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank"><p>Få väganvisning</p></a>
+                <p>040-611 27 26</p>
+            </div>
 
-<section class="hamburger-section">
-    <h1>Hamburgare</h1>
-    <p>
-        Oavsett om du väljer Hamburgare, Cheeseburgare eller klassikern Big Mac <br> får du alltid 
-        100 % rent nötkött med maximal köttsmak, perfekt kryddat för bästa upplevelse. 
-        <br> Ät och njut av våra goda saftiga hamburgare!
-    </p>
+            <p class="hours">Vi har öppet nu - Stänger kl 01:00</p>
 
-<!------------ Burgers Container ------------>
+            <button class="mcdelivery-btn">Beställ McDelivery</button>
 
-<div class="burger-options">
-    <div>
-        <a href=""><div class="burger">
-            <img src="honey-burger.jpg" alt="Honey Mustard Burger">
-            <p>Honey Mustard</p>
-        </div></a>
-        
-        <a href=""><div class="burger">
-            <img src="dbltasty-burger.jpg" alt="Dubbel Honey Mustard Burger">
-            <p>Dubbel Tasty</p>
-        </div></a>
+            <div class="app-info">
+                <h2>Ladda ner McDonald's-appen och få mer</h2>
+                <p>Tjäna poäng i MyMcDonald’s och ta del av fina erbjudanden, roliga spel och viktig information om maten och våra restauranger. Beställ och betala i appen och få maten serverad vid plats i eller utanför restaurangen. Ladda ner McDonald’s-appen och få ut mer av McDonald’s.</p>
+            </div>
 
-        <a href=""><div class="burger">
-            <img src="bigmac.jpg" alt="Big Mac Burger">
-            <p>Big Mac</p>
-        </div></a>
-    </div>
-
-    <div>
-        <a href=""><div class="burger">
-            <img src="dblhoney-burger.jpg" alt="Dubbel Honey Mustard Burger">
-            <p>Dubbel Honey Mustard</p>
-        </div></a>
-
-        <a href=""><div class="burger">
-            <img src="dbltasty-baconburger.jpg" alt="Tasty Bacon Burger">
-            <p>Tasty Bacon</p>
-        </div></a>
-
-        <a href=""><div class="burger">
-            <img src="glutenfri-bigmac.jpg" alt="Glutenfri Big Mac Burger">
-            <p>Big Mac med glutenfritt bröd</p>
-        </div></a>
-    </div>
-
-    <div>
-        <a href=""><div class="burger">
-            <img src="tasty-burger.jpg" alt="Tasty Burger">
-            <p>Tasty</p>
-        </div></a>
-
-        <a href=""><div class="burger">
-            <img src="dbltasty-baconburger.jpg" alt="Double Tasty Bacon Burger">
-            <p>Dubbel Tasty Bacon</p>
-        </div></a>
-
-        <a href=""><div class="burger">
-            <img src="tastycheese-burger.jpg" alt="Tasty Cheese">
-            <p>Tasty Cheese</p>
-        </div></a>
-    </div>
-
-    <div>
-        <a href=""><div class="burger">
-            <img src="mcdouble.jpg" alt="McDouble">
-            <p>McDouble</p>
-        </div></a>
-
-        <a href=""><div class="burger">
-            <img src="glutenfri-cheeseburgare.jpg" alt="Glutenfri Cheeseburger">
-            <p>Cheeseburgare med glutenfritt bröd</p>
-        </div></a>
-
-        <a href=""><div class="burger">
-            <img src="hamburgare.jpg" alt="Hamburger">
-            <p>Hamburgare</p>
-        </div></a>
-    </div>
-
-    <div>
-        <a href=""><div class="burger">
-            <img src="tplcheese.jpg" alt="Triple Cheeseburger">
-            <p>Trippel Cheeseburgare</p>
-        </div></a>
-
-        <a href=""><div class="burger">
-            <img src="dblcheeseburgare.jpg" alt="Double Cheeseburger">
-            <p>Dubbel Cheeseburgare</p>
-        </div></a>
-
-        <a href=""><div class="burger">
-            <img src="glutenfri-hamburgare.jpg" alt="Glutenfri Hamburger">
-            <p>Hamburgare med glutenfritt bröd</p>
-        </div></a>
-    </div>
-
-    <div>
-        <a href=""><div class="burger">
-            <img src="cheeseburgare.jpg" alt="Tasty Burger">
-            <p>Cheeseburgare</p>
-        </div></a>
-
-        <a href=""><div class="burger">
-            <img src="dblqpcheese.jpg" alt="Double QP Cheeseburger">
-            <p>Dubbel QP Cheese</p>
-        </div></a>
-
-        <a href=""><div class="burger">
-            <img src="mcfeast.jpg" alt="McFeast Burger">
-            <p>McFeast</p>
-        </div></a>
+            <div class="hours-info">
+                <h3>Öppettider</h3>
+                    <ul style="display: flex; justify-content: space-evenly;">
+                        <li>Mån:</li><li>07:00 - 01:00</li><br>
+                        <li>Tis:</li><li>07:00 - 01:00</li><br>
+                        <li>Ons:</li><li>07:00 - 01:00</li>
+                        <li>Tor:</li><li>07:00 - 01:00</li>
+                        <li>Fre:</li><li>Öppet dygnet runt </li>
+                        <li>Lör:</li><li>Öppet dygnet runt </li>
+                        <li>Sön:</li><li>06:00 - 01:00</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="map">
+            <img src="map.png" alt="Map of Malmö Triangeln">
+        </div>
     </div>
 </div>
-</section>
 
+<!------------ Separator Bottom ------------>
 
-<!------------ Seperator Bottom ------------>
-
-<hr>
-
+   <hr>
+    
 <!------------ Footer ------------>
 
 <footer class="bg-white dark:bg-white">
@@ -280,6 +203,7 @@
     </div>
 
 </footer>
+
 
 </body>
 </html>
