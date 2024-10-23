@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Välkommen till McDonald's!</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <!------------ Tailwind ------------>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!------------ Favicon ------------>
     <link rel="icon" type="x-icon" href="logov2.svg">
+    <!------------ Fontawesome Icons ------------>
     <script src="https://kit.fontawesome.com/265eaba4ad.js" crossorigin="anonymous"></script>
-
+    <!------------ External Font ------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 <!------------ Header ------------>
 
     <header>
-        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white-800 ">
+        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                 <a href="index.html" class="flex items-center">
                     <img src="logo.svg" class="mr-3 h-6 sm:h-9" alt="mc logo" />
-                    <span class="self-center text-xl font-medium whitespace-nowrap dark:text-black">McDonald's</span>
+                    <span class="self-center text-xl roboto-thin whitespace-nowrap">McDonald's</span>
                 </a>
 
                 <div class="flex items-center lg:order-2">
@@ -30,7 +36,7 @@
                 </div>
 
                 <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-2" id="mobile-menu-2">
-                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <ul class="flex flex-col mt-4 roboto-normal lg:flex-row lg:space-x-8 lg:mt-0">
                         <li>
                             <a href="index.html" class="block py-2 pr-4 pl-3 text-black rounded bg-primary-700 lg:bg-transparent lg:text-black lg:p-0 dark:text-black lg:dark:hover:text-yellow-500 focus:underline" aria-current="page">Hem</a>
                         </li>
@@ -55,39 +61,42 @@
   <hr>
 
 <!------------ Content ------------>
+
 <div class="mapgeneral">
     <div class="mapcontainer">
         <div class="content">
-            <h1>Malmö Triangeln</h1>
-            <p class="street"><strong>Friisgatan 2B</strong></p>
-            <div class="info-row">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+            <h1 class="poppinsbold">Malmö Triangeln</h1>
+            <p class="street poppinsbold"><strong>Friisgatan 2B</strong></p>
+            <div class="info-row poppinsregular">
                 <p>Malmö, 211 46</p>
-                <a class="mapredirect" href="https://www.google.com/maps/dir//55.59473,13.00309/@55.5945757,12.9209159,12z?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank"><p>Få väganvisning</p></a>
                 <p>040-611 27 26</p>
+                <a class="mapredirect" href="https://www.google.com/maps/dir//55.59473,13.00309/@55.5945757,12.9209159,12z?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank"><p>Få väganvisning</p></a>
             </div>
 
-            <p class="hours">Vi har öppet nu - Stänger kl 01:00</p>
+            <p class="opennow poppinsbold">Vi har öppet nu • <span>Stänger kl 01:00</span></p>
 
-            <button class="mcdelivery-btn">Beställ McDelivery</button>
+            <button class="mcdelivery-btn poppinsregular"> <a href="restaurang.html">Beställ McDelivery</a></button>
 
-            <div class="app-info">
+            <div class="downloadapp">
                 <h2>Ladda ner McDonald's-appen och få mer</h2>
                 <p>Tjäna poäng i MyMcDonald’s och ta del av fina erbjudanden, roliga spel och viktig information om maten och våra restauranger. Beställ och betala i appen och få maten serverad vid plats i eller utanför restaurangen. Ladda ner McDonald’s-appen och få ut mer av McDonald’s.</p>
             </div>
 
-            <div class="hours-info">
+           <div class="hours">
                 <h3>Öppettider</h3>
-                    <ul style="display: flex; justify-content: space-evenly;">
-                        <li>Mån:</li><li>07:00 - 01:00</li><br>
-                        <li>Tis:</li><li>07:00 - 01:00</li><br>
-                        <li>Ons:</li><li>07:00 - 01:00</li>
-                        <li>Tor:</li><li>07:00 - 01:00</li>
-                        <li>Fre:</li><li>Öppet dygnet runt </li>
-                        <li>Lör:</li><li>Öppet dygnet runt </li>
-                        <li>Sön:</li><li>06:00 - 01:00</li>
-                    </ul>
-            </div>
+                <ul>
+                  <li>Mån: <span>07:00 - 01:00</span></li>
+                  <li>Tis: <span>07:00 - 01:00</span></li>
+                  <li>Ons: <span>07:00 - 01:00</span></li>
+                  <li>Tor: <span>07:00 - 01:00</span></li>
+                  <li>Fre: <span>Öppet dygnet runt</span></li>
+                  <li>Lör: <span>Öppet dygnet runt</span></li>
+                  <li>Sön: <span>06:00 - 01:00</span></li>
+                </ul>
+              </div>
         </div>
+
         <div class="map">
             <img src="map.png" alt="Map of Malmö Triangeln">
         </div>
@@ -197,7 +206,7 @@
 <!------------ Footer Trademark ------------>
 
     <div class="px-4 py-6 md:flex md:items-center md:justify-between">
-        <span class="text-sm text-gray-500 dark:text-gray-900 sm:text-center">© 2024 McDonald's™. Alla rättigheter reserverade.</span>
+        <span class="text-sm text-gray-900 sm:text-center">© 2024 McDonald's™. Alla rättigheter reserverade.</span>
       </div>
 
     </div>

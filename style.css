@@ -53,7 +53,6 @@
     font-size: 0.875rem;
     line-height: 1.25rem;
     border-radius: 0.5rem;
-    font-weight: 600;
     transition: background-color 0.3s ease;
 }
 
@@ -119,6 +118,7 @@
     align-items: center; 
     margin: 0 auto;
     max-width: 1000px; 
+    font-family: firaregular;
 }
 
 .burger {
@@ -164,6 +164,7 @@ form {
     max-width: 24rem;
     margin: auto;
     padding-bottom: 4rem;
+    font-family: poppinsregular;
 }
 
 .mapgeneral {
@@ -196,11 +197,54 @@ form {
     font-weight: bold;
 }
 
-.hours {
-    font-weight: 600;
-    font-size: 1.4rem;
+.content svg {
+    width: 1.75rem;
+    height: auto;
+    fill: #bd0017;
+    transition: width 0.3s ease;
+}
+
+.content svg:hover {
+    width: 2rem;
+    height: auto;
+    fill: #861623;
+    cursor: pointer;
+}
+
+.opennow {
+    font-size: 1rem;
     color: #333;
     margin-top: 10px;
+}
+
+.opennow span {
+    font-family: poppinsregular;
+}
+
+.hours {
+    margin-top: 20px;
+  }
+  
+.hours h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-family: poppinsbold;
+}
+  
+.hours ul {
+    list-style: none;
+    padding: 0;
+    font-family: poppinsregular;
+}
+  
+.hours ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+  
+.hours ul li span {
+    font-weight: 550;
 }
 
 .mcdelivery-btn {
@@ -209,29 +253,29 @@ form {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.875rem;
     border-radius: 0.5rem;
     transition: background-color 0.3s ease;
     width: 12rem;
     margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .mcdelivery-btn:hover {
     background-color: #ca8a04;
 }
 
-.app-info h2 {
-    font-weight: 550;
-    font-size: 1.4rem;
+.downloadapp {
+    font-family: poppinsbold;
     color: #000;
     margin-bottom: 10px;
 }
 
-.app-info p {
-    font-size: 1rem;
+.downloadapp p {
+    font-family: poppinsregular;
     color: #333;
+    font-size: 1rem;
+    margin-top: 10px;
 }
 
 .hours-info {
@@ -255,7 +299,9 @@ form {
     height: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-left: 1.5rem;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    box-shadow: 2px 2px 15px #bbb
 }
 
 @media (max-width: 650px) {
@@ -266,7 +312,6 @@ form {
 
 .street {
     font-size: 1.2rem;
-    font-weight: bold;
 }
 
 .info-row {
@@ -281,6 +326,71 @@ form {
     margin: 0;
 }
 
+.info-row a {
+    color: #006bae;
+    text-decoration: underline;
+}
+
+.info-row a:hover {
+    color: #003d62;
+    text-decoration: underline;
+}
+
 .mapredirect:hover {
     text-decoration: underline;
+}
+
+
+/* Fonts */
+
+@font-face {
+    font-family: poppinsbold;
+    src: url(Fonts/Poppins-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: poppinsthin;
+    src: url(Fonts/Poppins-Light.ttf);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: poppinsregular;
+    src: url(Fonts/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: firaregular;
+    src: url(Fonts/FiraSans-Regular.ttf);
+    font-weight: normal;
+}
+
+.firaregular {
+    font-family: firaregular;
+}
+
+.poppinsthin {
+    font-family: poppinsthin;
+}
+
+.poppinsbold {
+    font-family: poppinsbold;
+}
+
+.poppinsregular {
+    font-family: poppinsregular;
+}
+
+.roboto-thin {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-normal {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
 }
