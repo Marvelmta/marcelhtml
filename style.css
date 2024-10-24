@@ -121,6 +121,13 @@
     font-family: firaregular;
 }
 
+@media (max-width: 650px) {
+    .burger-options {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .burger {
     text-align: center;
 }
@@ -191,6 +198,12 @@ form {
     flex-direction: column;
     gap: 10px;
 }
+
+@media (max-width: 650px) {
+    .content {
+        margin-left: 50%;
+    }
+}    
 
 .content h1 {
     font-size: 36px;
